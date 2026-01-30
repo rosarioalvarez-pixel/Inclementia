@@ -6,7 +6,7 @@
   <title>Inclemencia of Melodious</title>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
 
   <style>
     * {
@@ -52,6 +52,7 @@
       text-decoration: none;
       font-weight: 600;
       transition: all 0.3s ease;
+      display: inline-block;
     }
 
     .btn:hover {
@@ -110,7 +111,38 @@
     footer {
       padding: 2rem;
       text-align: center;
-      opacity: 0.6;
+      opacity: 0.8;
+    }
+
+    .creator {
+      margin-top: 1rem;
+      font-family: 'Great Vibes', cursive;
+      color: #ff5d8f;
+      font-size: 1.5rem;
+    }
+
+    /* Botón flotante WhatsApp */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #c9184a;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      text-decoration: none;
+      box-shadow: 0 10px 25px rgba(201, 24, 74, 0.5);
+      z-index: 1000;
+      transition: transform 0.3s ease;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1);
     }
 
     @media (max-width: 600px) {
@@ -159,19 +191,31 @@
 
   <section class="cta">
     <h2>Hacé tu confesión</h2>
-    <p>Completá el formulario y dejá que Cupido haga lo suyo.</p>
+    <p>Al tocar el botón se abrirá WhatsApp con el mensaje listo para enviar.</p>
+
     <a
-      href="https://docs.google.com/forms/d/e/1FAIpQLScKuPJveoANcbChCfqj2-g5GMGcq3OkLrtIEL2DXWNFCO-YUryg/viewform"
+      href="https://wa.me/56935668885?text=Nombre:%0ANúmero%20de%20teléfono:%0A¿Qué%20servicio%20quieres?:%0A[%%20]%20confesar%20tu%20amor%20durante%20la%20fiesta.%0A[%%20]%20servicio%20de%20cupido.%0A[%%20]%20otros%0A*Marca%20con%20un%20✅%20el%20que%20deseas*"
       target="_blank"
       class="btn"
     >
-      Ir al formulario
+      Enviar por WhatsApp
     </a>
   </section>
 
   <footer>
     <p>© 2026 Inclemencia of Melodious</p>
+    <div class="creator">Creado por Donasélle Kalashnikov</div>
   </footer>
+
+  <!-- Botón flotante WhatsApp -->
+  <a
+    href="https://wa.me/56935668885?text=Nombre:%0ANúmero%20de%20teléfono:%0A¿Qué%20servicio%20quieres?:%0A[%%20]%20confesar%20tu%20amor%20durante%20la%20fiesta.%0A[%%20]%20servicio%20de%20cupido.%0A[%%20]%20otros%0A*Marca%20con%20un%20✅%20el%20que%20deseas*"
+    class="whatsapp-float"
+    target="_blank"
+    aria-label="WhatsApp"
+  >
+    💬
+  </a>
 
   <script>
     const elements = document.querySelectorAll('.card, .intro, .cta');
