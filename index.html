@@ -2,47 +2,196 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Confesión · Día de los Corazones Sinceros</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inclemencia of Melodious</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at top, #1a1a1a, #000);
+      color: #f2f2f2;
+      line-height: 1.6;
+    }
+
+    header.hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    header.hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      letter-spacing: 1px;
+    }
+
+    .subtitle {
+      margin-top: 1rem;
+      opacity: 0.8;
+    }
+
+    .btn {
+      margin-top: 2rem;
+      padding: 0.8rem 2.2rem;
+      border-radius: 30px;
+      background: #c9184a;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(201, 24, 74, 0.4);
+    }
+
+    section.intro {
+      padding: 4rem 2rem;
+      text-align: center;
+      background: rgba(255,255,255,0.03);
+    }
+
+    section.intro span {
+      display: block;
+      margin-top: 1rem;
+      font-style: italic;
+      opacity: 0.7;
+    }
+
+    section.services {
+      padding: 4rem 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section.services h2 {
+      text-align: center;
+      margin-bottom: 3rem;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.05);
+      border-radius: 16px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      backdrop-filter: blur(8px);
+    }
+
+    .card h3 {
+      margin-bottom: 1rem;
+    }
+
+    .contact a {
+      color: #ff758f;
+      text-decoration: none;
+    }
+
+    section.cta {
+      padding: 4rem 2rem;
+      text-align: center;
+      background: linear-gradient(180deg, transparent, rgba(201, 24, 74, 0.15));
+    }
+
+    footer {
+      padding: 2rem;
+      text-align: center;
+      opacity: 0.6;
+    }
+
+    @media (max-width: 600px) {
+      header.hero h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
 </head>
 <body>
 
-  <main class="container">
-    <section class="card">
-      <span class="tag">Servicio de Cupido 💘</span>
+  <header class="hero">
+    <h1>Inclemencia of Melodious</h1>
+    <p class="subtitle">Confesión · Día de los corazones sinceros</p>
+    <a href="#servicios" class="btn">Confesá tu amor</a>
+  </header>
 
-      <h1>Confesión</h1>
-      <h2>Día de los corazones sinceros</h2>
+  <section class="intro">
+    <p>
+      Para todo aquel que quiera confesar su amor durante la fiesta,
+      este es su momento.
+      <span>Romántico · Directo · Anónimo</span>
+    </p>
+  </section>
 
-      <p class="intro">
-        Para todo aquel que quiera confesar su amor durante la fiesta,
-        este es su momento.
+  <section id="servicios" class="services">
+    <h2>Servicios</h2>
+
+    <div class="card">
+      <h3>💌 Confesión durante la fiesta</h3>
+      <p>Tu mensaje será entregado en el momento indicado.</p>
+    </div>
+
+    <div class="card">
+      <h3>🏹 Servicio de Cupido</h3>
+      <p>
+        Mandás el texto que quieras decirle a tu persona especial + 3 regalos.
+        Puede ser anónimo.
       </p>
-
-      <ul class="list">
-        <li>💌 Mandá el texto que quieras decirle a la persona de tu corazón</li>
-        <li>🎁 Se envía junto con <strong>3 regalos</strong> de tu elección</li>
-        <li>📩 Llega directo a su privado</li>
-        <li>🕶️ Puede ser <strong>anónimo</strong></li>
-      </ul>
-
-      <div class="buttons">
-        <a class="btn primary" href="https://wa.me/56935668885" target="_blank">
-          Hablar por WhatsApp
-        </a>
-
-        <a class="btn secondary" href="https://docs.google.com/forms/d/e/1FAIpQLScKuPJveoANcbChCfqj2-g5GMGcq3OkLrtlEL2DXWNFCO-YUryg/viewform?usp=preview" target="_blank">
-          Enviar confesión
-        </a>
-      </div>
-
-      <p class="footer">
-        Toda duda o consulta, comunicate al número de arriba.
+      <p class="contact">
+        WhatsApp:
+        <a href="https://wa.me/56935668885" target="_blank">+56 9 3566 8885</a>
       </p>
-    </section>
-  </main>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Hacé tu confesión</h2>
+    <p>Completá el formulario y dejá que Cupido haga lo suyo.</p>
+    <a
+      href="https://docs.google.com/forms/d/e/1FAIpQLScKuPJveoANcbChCfqj2-g5GMGcq3OkLrtIEL2DXWNFCO-YUryg/viewform"
+      target="_blank"
+      class="btn"
+    >
+      Ir al formulario
+    </a>
+  </section>
+
+  <footer>
+    <p>© 2026 Inclemencia of Melodious</p>
+  </footer>
+
+  <script>
+    const elements = document.querySelectorAll('.card, .intro, .cta');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = 1;
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    });
+
+    elements.forEach(el => {
+      el.style.opacity = 0;
+      el.style.transform = 'translateY(40px)';
+      el.style.transition = 'all 0.6s ease';
+      observer.observe(el);
+    });
+  </script>
 
 </body>
 </html>
